@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: clipboard
-  version: "0.0.5"
+  version: "1.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/clipboard-${{ version }}.tar.gz
-  sha256: f0708beb50c151333505de9c3428f5d0b547dcf401761a6b84146b30abe7babf
+  sha256: 5c3c8528d67a4c52b3bf63fb1ff66a929184895154db3c550326726af6f8ff8d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
